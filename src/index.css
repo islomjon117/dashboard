@@ -1,0 +1,80 @@
+/* import google font */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/*  setting  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* Link setting */
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg_color);
+/* background: #000; */
+}
+
+/* container  */
+.container {
+    max-width: 1356px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* sidebar and navbar setting  */
+.sidebar_and_navbar {
+    display: flex;
+    width: 100%;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+/* chart header */
+.chart_header {
+    display: block;
+}
+
+/* root */
+:root {
+    --bg_color: #F7F8FB;
+    --sidebar_bg_color: #FFFFFF;
+    --icon_color: #C7C7D2;
+    --menu_color: #51459E;
+    --hover_effect_color: #563BFF;
+    --input_color: #5A5881;
+    --sidebar_border: #3734A9;
+    --chart_info: #F0EDF6;
+    --session_icon: #F36643;
+    --user_icon: #3575FF;
+    --user_info: #15134B;
+    --bounce_bg: #4524F8;
+    --session_duration: #24D6A5;
+    --session_direct_bg: #F2F3F9;
+    --session_direct2: #FF7049;
+    --session_direct3: #20C997;
+    --circile_chart_boxshadow: #F2DDD8;
+    --circle_chart: #FFF3F0;
+    --top_region: #A3ABBD;
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        border-radius: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        border-radius: 0;
+        margin-top: 0;
+        height: auto;
+    }
+}

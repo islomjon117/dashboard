@@ -1,0 +1,294 @@
+/* daily overview info title btn start */
+.circle_chart_main {
+    margin-left: 100px;
+}
+
+.daily_overview_info_title_btn {
+    max-width: 702px;
+    margin-left: 27px;
+    margin-top: -53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daily_overview_info_title_btn button {
+    width: 131px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--sidebar_bg_color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+    border: none;
+    cursor: pointer;
+    color: var(--user_info);
+}
+
+.daily_overview_info_title_btn p {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--user_info);
+}
+
+/* daily overview info title btn end */
+
+/* daily overview info boxs style start */
+.daily_overview_info_boxs_main {
+    display: flex;
+    align-items: center;
+}
+
+.daily_overview_info_boxs {
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    margin-left: 27px;
+    margin-top: 20px;
+}
+
+.daily_overview_info_box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 345px;
+    height: 140px;
+    background: var(--sidebar_bg_color);
+    box-shadow: 0 0 10px 5px var(--chart_info);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.daily_overview_info_box2 {
+    margin-left: 15px;
+}
+
+.expected_of_users,
+.number_of_users {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.13px;
+    color: var(--chart_title2);
+}
+
+.expected,
+.today {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: var(--input_color);
+    margin-top: 15px;
+}
+
+/* circle chart style start */
+.box_1 {
+    width: 82px;
+    height: 82px;
+    background: #563BFF;
+    border-radius: 50%;
+}
+
+.box1 {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: var(--session_direct2);
+}
+
+.box_2 {
+    position: relative;
+    top: 7px;
+    left: 7.5px;
+    width: 67px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #EFECFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    position: relative;
+    top: 7px;
+    left: 7.5px;
+    width: 67px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: var(--circle_chart);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_in {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    clip: rect(0px 100px 41px 41px);
+}
+
+.box_2 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 11.72px;
+    color: var(--hover_effect_color);
+}
+
+.goals {
+    color: var(--session_direct2);
+}
+
+/* circle chart style end */
+.sessions_device_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: 475px;
+    height: 140px;
+    background: var(--sidebar_bg_color);
+    box-shadow: 0 0 10px 5px var(--chart_info);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 21px;
+}
+
+.sessions_device_btn_title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: var(--user_info);
+}
+
+.top_region {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15.23px;
+    color: var(--top_region);
+}
+
+.sessions_device_btn button {
+    width: 131px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--hover_effect_color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    border: none;
+    cursor: pointer;
+    color: var(--sidebar_bg_color);
+}
+
+/* daily overview info boxs style end */
+
+/* media screen session start */
+@media screen and (max-width: 768px) {
+
+    /* .daily_overview_info_boxs_main, */
+    .daily_overview_info_boxs_main {
+        flex-direction: column;
+    }
+
+    .daily_overview_info_boxs {
+        display: flex;
+        gap: 40px;
+        margin-left: 10px;
+    }
+
+    .daily_overview_info_title_btn {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 13px;
+        max-width: 615px;
+    }
+
+
+    .daily_overview_info_box1 {
+        margin-top: 15px;
+        margin-left: -12px;
+        width: 290px;
+    }
+
+    .sessions_device_button {
+        margin-left: -102px;
+        margin-bottom: 160px;
+    }
+
+    .sessions_device_button {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .daily_overview_info_boxs {
+        flex-direction: column;
+        position: relative;
+        margin-left: -50px;
+    }
+
+    .chart_info_left{
+        max-width: 380px;
+        width: 100%;
+    }
+    .daily_overview_info_title_btn {
+        margin-left: -70px;
+        margin-top: 50px;
+    }
+
+    .daily_overview_info_title_btn button {
+        position: relative;
+        right: 38px;
+    }
+
+    .daily_overview_info_box1 {
+        margin-left: -60px;
+        width: 400px;
+
+    }
+
+    .sessions_device_button {
+        width: 400px;
+        margin-left: -110px;
+        margin-bottom: 20px;
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .daily_overview_info_title_btn {
+        margin-left: -76px;
+        margin-top: 40px;
+    }
+
+    .daily_overview_info_title_btn button {
+        position: relative;
+        left: -23px;
+    }
+
+    .daily_overview_info_box1 {
+        margin-left: -60px;
+        width: 350px;
+    }
+
+    .sessions_device_button {
+        width: 350px;
+        margin-left: -105px;
+        margin-bottom: 20px;
+        margin-top: 45px;
+    }
+}
+
+/* media screen session end */

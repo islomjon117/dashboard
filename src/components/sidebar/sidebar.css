@@ -1,0 +1,245 @@
+/* sidebar style start */
+.sidebar_main {
+    position: fixed;
+    width: 102px;
+    background-color: var(--sidebar_bg_color);
+    height: 98vh;
+    align-items: center;
+    text-align: center;
+    margin-top: -10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 20;
+    transition: .3s;
+}
+
+.sidebar_icon p {
+    display: none;
+}
+
+.sidebar_main2 {
+    position: fixed;
+    width: 400px;
+    background-color: var(--sidebar_bg_color);
+    height: 97vh;
+    align-items: center;
+    text-align: center;
+    margin-top: -10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 100;
+    transition: .3s;
+}
+
+/* menu icon style */
+.menu_icon {
+    position: fixed;
+    font-size: 24px;
+    color: var(--menu_color);
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+.sidebar_icon_title {
+    position: fixed;
+    margin-left: 100px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--icon_color);
+}
+
+/*  come icon style */
+.home_icons {
+    margin-top: 180px;
+}
+
+/* sidebar icon style */
+.sidebar_icon a {
+    color: var(--icon_color);
+    font-size: 26px;
+    align-items: center;
+    width: 66px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    transition: .3s;
+    margin-left: 20px;
+}
+
+.sidebar_icons {
+    margin-top: 40px;
+}
+
+.sidebar_icon {
+    margin-top: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* sidebar home icon style */
+.sidebar_icon_home {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* sidebar_icon_home a style */
+.sidebar_icon_home a {
+    position: absolute;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    width: 66px;
+    height: 48px;
+    justify-content: center;
+    border-radius: 15px;
+    background: var(--hover_effect_color);
+    box-shadow: 0 0 10px 5px rgba(86, 59, 255, 0.26);
+    color: var(--sidebar_bg_color);
+    margin-left: 20px;
+}
+
+/* sidebar style end */
+
+
+/* sidebar hover start */
+.sidebar_icon_home::before {
+    content: '';
+    width: 5px;
+    height: 45px;
+    background-color: var(--sidebar_border);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidebar_icon:hover::before {
+    content: '';
+    width: 5px;
+    height: 45px;
+    background-color: var(--sidebar_border);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidebar_icon:hover a {
+    position: absolute;
+    background: var(--hover_effect_color);
+    width: 66px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    transition: .3s;
+    box-shadow: 0 0 10px 5px rgba(86, 59, 255, 0.26);
+    color: var(--sidebar_bg_color);
+}
+
+/* sidebar hover end */
+
+
+
+
+@media screen and (max-width: 480px) {
+    .sidebar_main {
+        height: 50px;
+        background-color: transparent;
+    }
+
+    .sidebar {
+        z-index: 20;
+    }
+
+    .sidebar_main2 {
+        width: 480px;
+        height: 1000px;
+    }
+
+    .sidebar_icon p {
+        margin-left: 130px;
+        margin-top: -3px;
+    }
+
+    .sidebar_icon_title {
+        margin-top: 15px;
+        margin-left: 130px;
+    }
+
+    .sidebar_icon_home,
+    .sidebar_icons {
+        display: block;
+        position: relative;
+        /* Add this line */
+    }
+
+    .sidebar_icon_home {
+        margin-top: -0px;
+    }
+
+    .menu_icon {
+        font-size: 30px;
+        margin-left: -1px;
+        margin-top: -2px;
+        background-color: var(--sidebar_bg_color);
+        height: 92px;
+        width: 101px;
+    }
+
+    .sidebar_icon_home,
+    .sidebar_icons {
+        overflow-y: hidden;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .sidebar_icons.visible {
+        max-height: 620px;
+        overflow-y: auto;
+        opacity: 1;
+    }
+
+    .sidebar_icon_home.visible {
+        max-height: 400px;
+        overflow-y: auto;
+        opacity: 1;
+    }
+
+    .sidebar_icon p {
+        max-height: 50px;
+        overflow-y: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 1;
+        position: absolute;
+        /* Add this line */
+    }
+
+    .sidebar_icons.visible .sidebar_icon p {
+        max-height: 50px;
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        z-index: 20;
+    }
+
+    .home_icons {
+        margin-top: 130px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .sidebar_icons.visible {
+        max-height: 430px;
+        overflow-y: auto;
+        opacity: 1;
+    }
+
+}

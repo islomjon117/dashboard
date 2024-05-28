@@ -1,0 +1,498 @@
+/* chart info right style */
+.chart_info_main {
+    display: flex;
+    margin-left: 100px;
+}
+
+.chart_info_boxs {
+    display: flex;
+    margin-top: 28px;
+    margin-left: 1.5px;
+    gap: 20px;
+}
+
+/* chart info box style */
+.chart_info_box {
+    width: 140px;
+    height: 200px;
+    background: var(--sidebar_bg_color);
+    box-shadow: 0 0 10px 5px var(--chart_info);
+    border-radius: 10px;
+    margin-left: 27px;
+}
+
+
+.user_icon {
+    font-size: 24px;
+}
+
+/* user icon style */
+.user_icon_bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--user_icon);
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 10%;
+}
+
+.user_icon {
+    position: relative;
+    bottom: 57px;
+    left: 33px;
+    color: var(--user_icon);
+    font-size: 24px;
+}
+
+.chart_info_title p {
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    margin-left: 20px;
+    bottom: 20px;
+    color: var(--input_color);
+}
+
+.chart_info_users p {
+    position: relative;
+    bottom: 12px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-left: 20px;
+    color: var(--user_info);
+}
+
+.chart_info_percent p {
+    position: relative;
+    bottom: 3px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    margin-left: 20px;
+    color: var(--input_color);
+}
+
+/* session icon style  */
+.session_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--session_icon);
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 10%;
+}
+
+/* session icon rectangle */
+.rectangle_icon {
+    position: relative;
+    bottom: 57px;
+    left: 33px;
+    color: var(--session_icon);
+    font-size: 24px;
+}
+
+/* session icon clock */
+.clock_icon {
+    position: relative;
+    bottom: 77px;
+    left: 45px;
+    background: #fff;
+    width: 14px;
+    z-index: 20;
+    color: var(--session_icon);
+    height: 15px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.chart_session_title p {
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    margin-left: 20px;
+    bottom: 33px;
+    color: var(--input_color);
+}
+
+.chart_session_num p {
+    position: relative;
+    bottom: 26px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-left: 20px;
+    color: var(--user_info);
+}
+
+.chart_session_percent p {
+    position: relative;
+    bottom: 15px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    margin-left: 20px;
+    color: var(--input_color);
+}
+
+/* chart Bounce info box style */
+.wave_icon_bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bounce_bg);
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 10%;
+}
+
+.wave_icon {
+    position: relative;
+    bottom: 57px;
+    left: 33px;
+    color: var(--bounce_bg);
+    font-size: 24px;
+}
+
+.chart_session_duration_title,
+.chart_bounce_title {
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    margin-left: 20px;
+    bottom: 16px;
+    color: var(--input_color);
+}
+
+.chart_minutes_seconds,
+.chart_bounce_main_percent {
+    position: relative;
+    bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-left: 20px;
+    color: var(--user_info);
+}
+
+.chart_session_duration_percent,
+.chart_bounce_percent {
+    position: relative;
+    top: 2px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    margin-left: 20px;
+    color: var(--input_color);
+}
+
+/* chart session duration info style*/
+.session_duration_icon_bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--session_duration);
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 10%;
+}
+
+.session_duration_icon {
+    position: relative;
+    bottom: 57px;
+    left: 33px;
+    color: var(--session_duration);
+    font-size: 24px;
+}
+
+/* chart info left style  */
+.chart_info_left {
+    width: 475px;
+    margin-left: 20px;
+    height: 274px;
+    border-radius: 10px;
+    background: var(--sidebar_bg_color);
+    box-shadow: 0 0 10px 5px var(--chart_info);
+    margin-top: 28px;
+}
+
+.session_device_title p {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: var(--user_info);
+    margin: 28px;
+    margin-top: 30px;
+}
+
+.session_device_subtitle {
+    display: flex;
+    margin: 28px;
+}
+
+.traffic,
+.channel,
+.value {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: var(--chart_title2);
+}
+
+.traffic {
+    margin-left: 43px;
+}
+
+.value {
+    margin-left: 209px;
+}
+
+
+/* session device direct style start */
+.session_device_direct_1 {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    margin-bottom: 28px;
+}
+
+.session_device_direct_1_title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: var(--input_color);
+}
+
+.direct_1 {
+    width: 234px;
+    height: 8px;
+    background: var(--session_direct_bg);
+    border-radius: 5px;
+    position: relative;
+    left: 53px;
+}
+
+.direct3_in,
+.direct2_in,
+.direct_in {
+    border-radius: 5px;
+    position: absolute;
+    width: 65%;
+    height: 8px;
+    background: var(--hover_effect_color);
+    border: none;
+    left: 0;
+    animation: fillAnimation 1.5s ease-in-out forwards;
+}
+
+.direct2_in {
+    background: var(--session_direct2);
+    animation: fillAnimation2 1.5s ease-in-out forwards;
+}
+
+.direct3_in {
+    background: var(--session_direct3);
+    animation: fillAnimation3 1.5s ease-in-out forwards;
+}
+
+.direct_value {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: var(--input_color);
+    margin-left: 90px;
+}
+
+.traffic {
+    display: flex;
+    gap: 5px;
+}
+
+/* session device direct style end */
+
+
+/* session device direct animation start */
+@keyframes fillAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 58%;
+    }
+}
+
+@keyframes fillAnimation3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes fillAnimation2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+/* session device direct animation end */
+
+@media screen and (max-width: 768px) {
+    .chart_info_boxs {
+        flex-wrap: wrap;
+        margin-left: 110px;
+    }
+
+    .chart_info_main {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .chart_info_box {
+        margin-left: 0px;
+    }
+
+    .chart_info_left2 {
+        position: relative;
+        /* left: 105px; */
+        margin-left: 150px;
+        width: 50px;
+        height: 280px;
+    }
+
+    .channel,
+    .session_device_title {
+        margin-left: 20px;
+    }
+
+    .traffic {
+        margin-left: 50px;
+    }
+
+    .value {
+        margin-left: 330px;
+    }
+
+    .session_device_direct_1 {
+        margin-left: 50px;
+    }
+
+    .direct_1 {
+        margin-left: 10px;
+    }
+
+    .direct_value {
+        margin-left: 70px;
+    }
+
+    .direct_1 {
+        width: 380px;
+        height: 8px;
+        background: var(--session_direct_bg);
+        border-radius: 5px;
+        position: relative;
+        left: 53px;
+    }
+
+    .clock_icon {
+        z-index: 10;
+    }
+
+    /* chart_info_left for max-width 768px */
+    .chart_info_left {
+        width: 100%;
+        max-width: 618px;
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .chart_info_boxs {
+        flex-wrap: wrap;
+    }
+
+
+    .chart_info {
+        margin-left: -25px;
+    }
+
+    .chart_info_left {
+        width: 100%;
+        max-width: 455px;
+        margin-left: 35px;
+    }
+
+    .session_device_title {
+        margin-left: -3px;
+    }
+
+    .session_device_subtitle {
+        margin-left: 5px;
+    }
+
+    .session_device_direct_1 {
+        margin-left: 19px;
+        padding: 5px;
+    }
+
+    .value {
+        margin-left: 208px;
+    }
+}
+
+/* @media screen and (max-width: 375px) {
+    .chart_info_boxs {
+        flex-wrap: wrap;
+    }
+
+    .chart_info {
+        margin-left: -68px;
+    }
+
+    .chart_info_left {
+        width: 100%;
+        max-width: 360px;
+        margin-left: 75px;
+    }
+
+    .value {
+        margin-left: 115px;
+    }
+} */
